@@ -3,7 +3,7 @@
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-    --header-height: 23rem;
+    --header-height: 3rem;
 
     /*========== Colors ==========*/
     /* Change favorite color */
@@ -76,22 +76,11 @@
 
 
 /*==================== BASE ====================*/
-
-.header {
-    height: 100px;  
-    margin: auto;
-    padding: 50px;
-    text-align: center;
-    border: 1px solid blue;
+* {
     box-sizing: border-box;
-}
-
-.nav {
-    height: 50px;  
-    padding: 15px;
-    border: 1px solid red;
-    box-sizing: border-box;
-}
+    padding: 0;
+    margin: 50px;
+  }
 
 html {
   scroll-behavior: smooth;
@@ -111,12 +100,6 @@ h1, h2, h3, h4 {
   font-weight: var(--font-semi-bold);
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
-
-
-/*==================== LAYOUT ====================*/
-
-
 /*==================== NAV ====================*/
 nav {
     background-color: rgb(0, 0, 0);
@@ -125,6 +108,7 @@ nav {
     align-items: center;
     padding: 5px;
 }
+
 nav a {
     text-decoration: none;
     padding: 5px;
@@ -138,65 +122,3 @@ nav a {
 nav a:hover{
     background-color: purple;
 }
-/* show menu */
-
-
-/* Active link */
-
-
-/* Change background header */
-
-
-/*==================== HOME ====================*/
-
-
-/*==================== BUTTONS ====================*/
-
-
-/*==================== ABOUT ====================*/
-
-
-/*==================== SKILLS ====================*/
-
-
-/*==================== QUALIFICATION ====================*/
-
-
-/*==================== SERVICES ====================*/
-
-
-/* Active Modal */
-
-
-/*==================== PORTFOLIO ====================*/
-
-
-/*==================== PROJECT IN MIND ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
-
-/*==================== CONTACT ME ====================*/
-
-
-/*==================== FOOTER ====================*/
-
-
-/*========== SCROLL UP ==========*/
-
-
-/* Show scroll */
-
-
-/*========== SCROLL BAR ==========*/
-
-
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-
-
-/* For medium devices */
-
-
-/* For large devices */

@@ -3,25 +3,17 @@
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-    --header-height: 3rem;
 
     /*========== Colors ==========*/
-    /* Change favorite color */
-    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: black;
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #fff;
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --body-color: #cbc3c1;
+    --hover-nav-color: #ba7f61;
 
     /*========== Font and typography ==========*/
     --body-font: Helvetica;
@@ -79,8 +71,8 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 50px;
-  }
+    margin: 30px;
+}
 
 html {
   scroll-behavior: smooth;
@@ -102,7 +94,7 @@ h1, h2, h3, h4 {
 
 /*==================== NAV ====================*/
 nav {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--body-color);
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
@@ -114,11 +106,11 @@ nav a {
     padding: 5px;
     text-align: center;
     float: center;
-    color: white;
+    color: var(--text-color);
     margin-left: auto;
     margin-right: auto;
 }
 
 nav a:hover{
-    background-color: purple;
+    background-color: var(--hover-nav-color);
 }

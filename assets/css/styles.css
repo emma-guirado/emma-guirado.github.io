@@ -76,20 +76,66 @@ body {
 .panel_home{
     display: block;
     padding: 0;
-    min-height: 200px;
+    min-height: 250px;
 }
 
 .panel_resume, 
-.panel_skills, 
-.panel_contact{
+.panel_skills{
     display: none;
 }
 
-/*======================== Specific classes ========================*/
-#contact .social{
-    list-style: none;
-    padding-left: 0;
+/*======================== Main page ========================*/
+
+.panel_home > header {
+    padding: 150px 0;
+    width: 40%;
+    text-align: center;
 }
+
+.panel_home > header > h1 {
+    color: rgba(0, 0, 0, 0.80);
+}
+
+.panel_home > header > p {
+    color: rgba(0, 0, 0, 0.60);
+}
+
+/* Social links from the main page */
+#social_links a {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: rgba(0.8, 0.8, 0.8, 0.5);
+    position: relative;
+}
+
+#social_links a:hover {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: rgba(0.8, 0.8, 0.8, 1);
+    position: relative;
+}
+
+#img_me {
+    position: relative;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    -moz-object-fit: cover;
+    -webkit-object-fit: cover;
+    -ms-object-fit: cover;
+    object-fit: cover;
+    -moz-object-position: center;
+    -webkit-object-position: center;
+    -ms-object-position: center;
+    object-position: center;
+  }
 
 /*============================= Footer ============================*/
 #footer {

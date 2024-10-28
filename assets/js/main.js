@@ -8,7 +8,7 @@ function showSection () {
     navList.addEventListener('click', function showContent (event) {
         let elementToDisplay = event.target.id;
         // console.log("element to display:"+elementToDisplay);
-        if (elementToDisplay != "nav")
+        if (elementToDisplay != navList.id)
         {
             for (article of articles) {
             // console.log(article);

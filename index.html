@@ -4,26 +4,26 @@
 		<title>Emma Guirado</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="css/styles.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="assets/css/styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<noscript><link rel="stylesheet" href="css/noscript.css"/></noscript>
 	</head>
-	<body class="is-preload">
-
+	<body>
 		<!-- Wrapper-->
 			<div id="wrapper">
-
+                
+                <!-- Nav bar -->
                     <nav id="nav">
-                        <a href="#">Home</a>
-                        <a href="#resume">Resume</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#contact"><span>Contact</span></a>
+                        <a href="#" id="home">Home</a>
+                        <a href="#resume" id="resume">Resume</a>
+                        <a href="#skills" id="skills">Skills</a>
+                        <a href="#contact" id="contact">Contact</a>
                     </nav>
 
 				<!-- Main -->
 					<div id="main">
-
 						<!-- Me -->
-							<article id="home" class="panel intro">
+							<article id="home" class="panel panel_home">
 								<header>
 									<h1>Emma Guirado</h1>
 									<p>Software Engineer</p>
@@ -31,7 +31,7 @@
 							</article>
 
                         <!--Resume-->
-                        <article id="resume" class="panel">
+                        <article id="resume" class="panel panel_resume">
                             <header>
                                 <h2>Resume</h2>
                             </header>
@@ -44,7 +44,7 @@
                         </article>
 
 						<!-- Skills -->
-							<article id="skills" class="panel">
+							<article id="skills" class="panel panel_skills">
 								<header>
 									<h2>Skills</h2>
 								</header>
@@ -59,31 +59,16 @@
 							</article>
 
 						<!-- Contact -->
-							<article id="contact" class="panel">
+							<article id="contact" class="panel panel_contact">
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="/send_email.php" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6">
-												<input type="text" id="name" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6">
-												<input type="text" id="email" name="email" placeholder="Email" required/>
-											</div>
-											<div class="col-12">
-												<input type="text" id="subject" name="subject" placeholder="Subject" required/>
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
+								<p>
+                                    <ul class="social">
+                                        <li><i class="fa fa-envelope"></i><a href="mailto:e.n.guirado@gmail.com"></i>Send email</a></li>
+                                        <li>Linkedin</li>
+                                    </ul>
+                                </p>
 							</article>
 
 					</div>
@@ -98,11 +83,6 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+            <script src="assets/js/main.js"></script>
 	</body>
 </html>
